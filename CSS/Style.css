@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0px;
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.app {
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+}
+.logo-text__light {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.title-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000;
+}
+.title-text__light {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000;
+  color: #fff;
+}
+
+.text {
+  font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+}
+
+.header-main {
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(#242424, #7c7979) fixed;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-main_logo img {
+  width: 128px;
+  height: 128px;
+}
+.header-main_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.header-main_nav {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+  padding-bottom: 48px;
+}
+.header-main_nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.burger_box {
+  min-width: 32px;
+  min-height: 32px;
+}
+.burger_box #burger {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+.burger_box #burger:checked ~ .drop-menu {
+  right: 0;
+}
+.burger_box__drop {
+  background: #ffffff;
+  width: 232px;
+  box-sizing: border-box;
+  position: absolute;
+  box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
+  top: 110px;
+  right: -232px;
+  transition: right 0.3s;
+  z-index: 1;
+  padding: 32px;
+}
+.burger_box__drop__menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 11px;
+}
+.burger_box__drop__menu__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.burger_box__drop__menu__title__red {
+  margin-bottom: 1px;
+  font-weight: 400;
+  color: #f16d7f;
+}
+.burger_box__drop__menu__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  margin-left: 20px;
+}
+.burger_box__drop__menu__btn {
+  text-decoration: none;
+  background: #ffffff;
+  border: none;
+}
+.burger_box__drop__menu__btn:hover {
+  border: 1px dotted #f16d7f;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 24px;
+}
+.banner_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 32px;
+}
+.banner_content_description {
+  text-align: justify;
+}
+.banner_content_price {
+  align-self: end;
+}
+.banner_feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.banner_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 60%;
+  gap: 16px;
+}
+.banner_content-box {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  gap: 24px;
+}
+.banner_button-box {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.banner_button-box_buy-btn {
+  padding: 10px;
+  background-color: #7c7979;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.banner_button-box_buy-btn:hover {
+  background-color: #cec5c5;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.banner_button-box_send-btn {
+  padding: 10px;
+  background-color: #7c7979;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.banner_button-box_send-btn:hover {
+  background-color: #cec5c5;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.banner_image {
+  width: 30%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Style.css.map */
