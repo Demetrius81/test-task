@@ -257,7 +257,11 @@ dd {
 }
 .banner_image {
   width: 30%;
-  height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.3s ease;
+}
+.banner_image:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=Style.css.map */

@@ -274,7 +274,11 @@ dd {
     }
     &_image {
         width: 30%;
-        height: 50%;
         object-fit: cover;
+        transition: all 0.3s ease;
+    }
+    &_image:hover {
+        transform: scale(1.5);
+        transition: all 0.3s ease;
     }
 }
